@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A README generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcnairjm/readme-generator.git"
+  },
+  "author": "John McNair",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcnairjm/readme-generator/issues"
+  },
+  "homepage": "https://github.com/mcnairjm/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.2.0"
   }
 }
