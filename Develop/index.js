@@ -112,8 +112,4 @@ init();
 
 
 
-/*const writeToFile = (fileName, data) => {
-    fs.appendFile('./dist/README.md', data, (err) => 
-        err ? console.error(err) : console.log('Your README has been created')
-    );
-}*/
+
