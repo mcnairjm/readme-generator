@@ -1,6 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+const licenseArr = ['MIT', 'Apache 2.0', 'BSD', 'GPL', 'Mozilla Public'];
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if (license === licenseArr[0]) {
+    return '[![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string

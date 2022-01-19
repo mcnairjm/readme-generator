@@ -65,9 +65,9 @@ const questions = () => {
         },
         {
             type: 'checkbox',
-            name: 'licenses',
+            name: 'license',
             message: 'Choose a license associated with the project.',
-            choices: ['MIT', 'Apache', 'BSD', 'GPL', 'Mozilla Public']
+            choices: ['MIT', 'Apache 2.0', 'BSD', 'GPL', 'Mozilla Public']
         },
         {
             type: 'input',
