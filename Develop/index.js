@@ -64,10 +64,10 @@ const questions = () => {
             message: 'List any collaborators on the project'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Choose a license associated with the project.',
-            choices: ['MIT', 'Apache 2.0', 'BSD', 'GPL', 'Mozilla Public']
+            choices: ['MIT', 'Apache 2.0', 'BSD', 'GNU GPL v3', 'Mozilla Public']
         },
         {
             type: 'input',
