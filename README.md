@@ -1,4 +1,4 @@
-# readme-generator
+# README-Generator
 
 ## Purpose
 To create a command line application that allows for easy creation of a professional README
