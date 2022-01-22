@@ -12,16 +12,49 @@ function renderLicenseBadge(license) {
     return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
   } else if (license === licenseArr[4]) {
     return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+  } else {
+    return ''
+  }
+}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license === licenseArr[0]) {
+    return `Read about ${licenseArr[0]} here:`
+  } else if (license === licenseArr[1]) {
+    return `Read about ${licenseArr[1]} here:`
+  } else if (license === licenseArr[2]) {
+    return `Read about ${licenseArr[2]} here:`
+  } else if (license === licenseArr[3]) {
+    return `Read about ${licenseArr[3]} here:`
+  } else if (license === licenseArr[4]) {
+    return `Read about ${licenseArr[4]} here:`
+  } else {
+    return ''
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (license === licenseArr[0]) {
+    return `https://opensource.org/licenses/MIT`
+  } else if (license === licenseArr[1]) {
+    return `https://opensource.org/licenses/Apache-2.0`
+  } else if (license === licenseArr[2]) {
+    return `https://opensource.org/licenses/BSD-3-Clause`
+  } else if (license === licenseArr[3]) {
+    return `https://opensource.org/licenses/gpl-3.0`
+  } else if (license === licenseArr[4]) {
+    return `https://opensource.org/licenses/MPL-2.0`
+  } else {
+    return ''
+  }
+  
+  
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
@@ -36,6 +69,7 @@ function generateMarkdown(answers) {
   * [Usage](#usage)
   * [License](#license)
   * [Credits](#credits)
+  * [Test](#test)
   * [Questions](#questions)
   
   ## Installation
@@ -51,9 +85,14 @@ function generateMarkdown(answers) {
   ## Credits
   ${answers.credits}
 
+  ## Test
+  ${answers.test}
+
   ## Questions
   ### Reach out to me at:
-  ${answers.username}
+  https://github.com/${answers.username}
+  &
+  ${answers.email}
 
 `;
 }

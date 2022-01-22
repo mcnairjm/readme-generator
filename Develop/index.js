@@ -64,6 +64,19 @@ const questions = () => {
             message: 'List any collaborators on the project'
         },
         {
+            type: 'confirm',
+            name: 'testConfirm',
+            message: 'Do you have testing instructions?'
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'Detail any test instructions.',
+            when: answers => {
+                return answers.testConfirm;
+            }
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Choose a license associated with the project.',
@@ -84,9 +97,14 @@ const questions = () => {
         },
         {
             type: 'input',
+            name: 'email',
+            message: 'What is your e-mail address?'
+        },
+        {
+            type: 'input',
             name: 'fileName',
             message: 'What is the title of your README?'
-        }
+        },
         
     ])
     /*.then((answers) => {    
