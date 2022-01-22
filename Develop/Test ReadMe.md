@@ -1,5 +1,5 @@
 # My Project
-  [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+  [![license: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
   It's a project!
@@ -19,14 +19,14 @@
   Use it!
   
   ## License
-  Read about BSD here:
-  https://opensource.org/licenses/BSD-3-Clause
+  Read about MIT here:
+  https://opensource.org/licenses/MIT
 
   ## Credits
   Just me and Google
 
   ## Test
-  Test it
+  Test it!
 
   ## Questions
   ### Reach out to me at:
